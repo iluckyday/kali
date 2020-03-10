@@ -2,6 +2,7 @@
 set -e
 
 apt-get update
+apt-get upgrade
 apt-get install -y debootstrap
 
 wget https://http.kali.org/pool/main/k/kali-archive-keyring/kali-archive-keyring_2018.2_all.deb
