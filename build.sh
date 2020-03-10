@@ -3,8 +3,8 @@ set -e
 
 apt-get update
 
-wget http://http.kali.org/pool/main/k/kali-archive-keyring/kali-archive-keyring_2018.2_all.deb
-wget https://archive.kali.org/kali/pool/main/l/live-build/live-build_20190311_all.deb
+wget https://http.kali.org/pool/main/k/kali-archive-keyring/kali-archive-keyring_2018.2_all.deb
+wget https://archive.kali.org/kali/pool/main/l/live-build/live-build_20191221_all.deb
 dpkg -i kali-archive-keyring_2018.2_all.deb
 dpkg -i live-build_20190311_all.deb
 
