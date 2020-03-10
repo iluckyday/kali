@@ -6,7 +6,7 @@ apt-get install -y live-build
 
 git clone --depth=1 https://gitlab.com/kalilinux/build-scripts/live-build-config.git
 cd live-build-config
-./build.sh --variant --verbose
+./build.sh --variant minimal --verbose
 ls -lh images
 exit 1
 
