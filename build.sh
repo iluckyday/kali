@@ -2,13 +2,12 @@
 set -e
 
 apt-get update
+apt-get install -y debootstrap
 
 wget https://http.kali.org/pool/main/k/kali-archive-keyring/kali-archive-keyring_2018.2_all.deb
 wget https://archive.kali.org/kali/pool/main/l/live-build/live-build_20191221_all.deb
 dpkg -i kali-archive-keyring_*_all.deb
 dpkg -i live-build_*_all.deb
-
-apt-get install -y live-build
 
 cd /usr/share/debootstrap/scripts/
 echo "default_mirror http://http.kali.org/kali"; sed -e "s/debian-archive-keyring.gpg/kali-archive-keyring.gpg/g" sid > /tmp/kali
