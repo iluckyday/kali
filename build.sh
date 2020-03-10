@@ -5,8 +5,8 @@ apt-get update
 
 wget https://http.kali.org/pool/main/k/kali-archive-keyring/kali-archive-keyring_2018.2_all.deb
 wget https://archive.kali.org/kali/pool/main/l/live-build/live-build_20191221_all.deb
-dpkg -i kali-archive-keyring_2018.2_all.deb
-dpkg -i live-build_20190311_all.deb
+dpkg -i kali-archive-keyring_*_all.deb
+dpkg -i live-build_*_all.deb
 
 apt-get install -y live-build
 
